@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foreign languages courses student registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+<h1>Please fill in all fields below</h1>
+<form action="handler.php" method="POST">
+    <label>First name:</label>
+    <input type="text" name="first_name" required>
+    <label>Last name:</label>
+    <input type="text" name="last_name" required>
+    <label>Age number:</label>
+    <input type="number" name="age" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <p><strong>Available language courses:</strong></p>
+    <label class="checkbox-label">
+        <input type="checkbox" name="courses[]" value="English">
+        English
+    </label>
+
+    <label class="checkbox-label">
+        <input type="checkbox" name="courses[]" value="Italian">
+        Italian
+    </label>
+
+    <label class="checkbox-label">
+        <input type="checkbox" name="courses[]" value="Spanish">
+        Spanish
+    </label>
+
+    <label class="checkbox-label">
+        <input type="checkbox" name="courses[]" value="Portuguese">
+        Portuguese
+    </label>
+
+    <label class="checkbox-label">
+        <input type="checkbox" name="courses[]" value="Norwegian">
+        Norwegian
+    </label>
+
+
+    <button type="submit" id="submit-button" onclick="return validateForm()">Register</button>
+    <button type="reset">Reset data</button>
+</form>
+
+</body>
+</html>
+
+
+
