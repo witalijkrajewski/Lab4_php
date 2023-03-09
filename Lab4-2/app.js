@@ -1,9 +1,9 @@
 function validateForm() {
-    var checkboxes = document.querySelectorAll('input[type=checkbox]');
+    const checkboxes = document.querySelectorAll('input[type=checkbox]');
 
 
-    var checked = false;
-    for (var i = 0; i < checkboxes.length; i++) {
+    let checked = false;
+    for (let i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
             checked = true;
             break;
