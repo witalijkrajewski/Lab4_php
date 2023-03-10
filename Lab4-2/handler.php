@@ -27,7 +27,7 @@ if (isset($_POST['courses'])) {
 $message = "Hello dear " . $first_name . " " . $last_name . "!<br />";
 $message .= "<br>We are pleased to inform you that ";
 $event_message = "your chosen foreign language courses will take place $tomorrow_date <ul>";
-$lecture .= "";
+$lecture = "";
 
 for ($index = 0; $index < count($courses); $index += 1) {
     $course = $courses[$index];
