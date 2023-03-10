@@ -3,13 +3,12 @@ $num1 = $_POST['num1'];
 $num2 = $_POST['num2'];
 $num3 = $_POST['num3'];
 
-function is_fibonacci_sequence($a, $b, $c) {
+function is_fibonacci_sequence($a, $b, $c)
+{
     if ($a + $b == $c) {
         return true;
     } else if ($a + $b < $c) {
         return false;
-    } else {
-        return is_fibonacci_sequence($b, $c, $a+$b);
     }
 }
 
